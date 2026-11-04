@@ -1,0 +1,13 @@
+Component,Proposed model/specification,Quantity,Required or optional,Purpose,Supplier,Unit price (USD),Total price (USD),Purchasing status,Notes
+Microcontroller,ESP32 DevKit,1,Core,Main controller; I2C PWM and encoder pulse counting,,,,Not confirmed,Final board and pin availability must be verified
+Distance sensor,VL53L0X ToF breakout board,5,Recommended,Detect maze walls,,,,Not confirmed,Recommended 4-5; separate XSHUT control needed for I2C address assignment
+Geared motor,N20 DC gear motor with encoder,2,Core,Drive wheels and provide encoder feedback,,,,Not confirmed,Verify motor voltage and gear ratio before ordering
+Motor driver,TB6612FNG module,1,Recommended,Control left and right motor speed and direction,,,,Not confirmed,Verify motor current requirements
+Battery,2S LiPo 300-500 mAh,1,Recommended,Portable power source,,,,Not confirmed,Swappable; voltage monitoring and safe charging needed
+Gyroscope,MPU6050 module,1,Optional,Support more accurate turns,,,,Not confirmed,Check I2C and voltage compatibility
+Wheels,Compatible wheels for selected N20 shafts,2,Additional,Traction and movement,,,,Not confirmed,Confirm wheel diameter and shaft fit
+Balance support,Low friction skid or ball caster,1,Additional,Robot balance,,,,Not confirmed,Check floor seams and ground clearance
+Chassis,Custom lightweight chassis,1,Additional,Mount components within size limits,,,,Not confirmed,Target footprint approximately 10 x 11 cm
+Power regulation,Regulator(s) matched to selected electronics,1 set,Additional,Supply safe operating voltages,,,,Not confirmed,Determine rail voltages and motor current first
+Battery monitoring,Voltage divider / sensing circuitry,1 set,Additional,Monitor battery voltage,,,,Not confirmed,Design according to ESP32 ADC limits
+Power accessories,Switch battery connector wires and mounting hardware,1 set,Additional,Safe power connection and assembly,,,,Not confirmed,Verify connector and wiring current ratings
